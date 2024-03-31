@@ -30,7 +30,7 @@ function App() {
         <link rel="icon" type="image/png" sizes="512x512" href={androidLg} />
         <link rel="icon" type="image/png" sizes="32x32" href={favLg} />
         <link rel="icon" type="image/png" sizes="16x16" href={fav} />
-        {/* <link rel="manifest" href="./assets/site.webmanifest" /> */}
+        <link rel="manifest" href="./assets/site.webmanifest" />
       </Helmet>
     </>
   );
