@@ -1,6 +1,12 @@
 import "./App.css";
 import { Helmet } from "react-helmet-async";
 
+import fav from "./assets/favicon-16x16.png";
+import favLg from "./assets/favicon-32x32.png";
+import apple from "./assets/apple-touch-icon.png";
+import android from "./assets/android-chrome-192x192.png";
+import androidLg from "./assets/android-chrome-512x512.png";
+
 function App() {
   return (
     <>
@@ -10,31 +16,31 @@ function App() {
           {
             rel: "apple-touch-icon",
             sizes: "180x180",
-            href: "./assets/apple-touch-icon.png",
+            href: { apple },
           },
           {
             rel: "icon",
             type: "image/png",
             sizes: "192x192",
-            href: "./assets/android-chrome-192x192.png",
+            href: { android },
           },
           {
             rel: "icon",
             type: "image/png",
             sizes: "512x512",
-            href: "./assets/android-chrome-512x512.png",
+            href: { androidLg },
           },
           {
             rel: "icon",
             type: "image/png",
             sizes: "32x32",
-            href: "./assets/favicon-32x32.png",
+            href: { favLg },
           },
           {
             rel: "icon",
             type: "image/png",
             sizes: "16x16",
-            href: "./assets/favicon-16x16.png",
+            href: { fav },
           },
           { rel: "manifest", href: "./assets/site.webmanifest" },
         ]}
